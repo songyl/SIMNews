@@ -1,0 +1,99 @@
+﻿@model IEnumerable<SIMNews.Models.教师>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.姓名)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.性别)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.出生日期)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.所在系部)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.职称)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.个人简介)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.职务)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.邮箱)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.办公电话)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.家庭电话)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.手机)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.角色)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.姓名)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.性别)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.出生日期)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.所在系部)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.职称)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.个人简介)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.职务)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.邮箱)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.办公电话)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.家庭电话)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.手机)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.角色)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.工号 }) |
+            @Html.ActionLink("Details", "Details", new { id=item.工号 }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.工号 })
+        </td>
+    </tr>
+}
+
+</table>

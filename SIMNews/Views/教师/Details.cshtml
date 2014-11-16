@@ -1,0 +1,114 @@
+﻿@model SIMNews.Models.教师
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>教师</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.姓名)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.姓名)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.性别)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.性别)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.出生日期)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.出生日期)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.所在系部)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.所在系部)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.职称)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.职称)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.个人简介)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.个人简介)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.职务)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.职务)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.邮箱)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.邮箱)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.办公电话)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.办公电话)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.家庭电话)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.家庭电话)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.手机)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.手机)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.角色)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.角色)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.工号 }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
