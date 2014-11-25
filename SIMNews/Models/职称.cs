@@ -12,5 +12,6 @@ namespace SIMNews.Models
         public string 职称 { get; set; }
 
         public string 级别 { get; set; }
+
     }
 }

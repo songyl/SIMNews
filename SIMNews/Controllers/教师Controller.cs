@@ -17,7 +17,7 @@ namespace SIMNews.Controllers
         // GET: 教师
         public ActionResult Index()
         {
-            return View(db.教师.ToList());
+            return View(db.教师.OrderBy(t => t.工号).ToList());
         }
 
         // GET: 教师/Details/5

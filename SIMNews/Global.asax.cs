@@ -16,6 +16,8 @@ namespace SIMNews
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            System.Data.Entity.Database.SetInitializer(new System.Data.Entity.MigrateDatabaseToLatestVersion<SIMNews.Models.SIMNewsContext,SIMNews.Migrations.Configuration>());
         }
     }
 }

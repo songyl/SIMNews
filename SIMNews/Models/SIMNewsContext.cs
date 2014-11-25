@@ -22,6 +22,6 @@ namespace SIMNews.Models
         public System.Data.Entity.DbSet<SIMNews.Models.职称表> 职称表 { get; set; }
 
         public System.Data.Entity.DbSet<SIMNews.Models.教师> 教师 { get; set; }
-    
+
     }
 }

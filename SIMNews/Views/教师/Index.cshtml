@@ -12,6 +12,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.工号)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.姓名)
         </th>
         <th>
@@ -25,9 +28,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.职称)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.个人简介)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.职务)
@@ -53,6 +53,9 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.工号)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.姓名)
         </td>
         <td>
@@ -66,9 +69,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.职称)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.个人简介)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.职务)
